@@ -1,7 +1,6 @@
 =================================="BANK APPLICATION GUIDE"==================================
 
-The USER can perfrom basic bank applicaiton 
-operations like:
+The USER can perform basic bank application operations like:
     
     1. Creating a bank account for a new customer.  
     2. Depositing amount into an account.
@@ -11,7 +10,7 @@ operations like:
 
 
 *   To get started, the user must create a bank account
-    everytime they run the program.
+    every time they run the program.
 
 *   Once the user is finished creating a bank account, 
     the user will get prompted to choose an operation 
