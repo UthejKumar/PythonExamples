@@ -1,4 +1,4 @@
-====================================="BANK APPLICATION GUIDE"=====================================
+=================================="BANK APPLICATION GUIDE"==================================
 
 The USER can perfrom basic bank applicaiton 
 operations like:
