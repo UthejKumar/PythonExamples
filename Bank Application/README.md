@@ -1,17 +1,12 @@
-==========="BANK APPLICATION GUIDE"===========
+================="BANK APPLICATION GUIDE"=================
 
 The USER can perfrom basic bank applicaiton 
 operations like:
     
-    1. Creating a bank account for a 
-       new customer.
-    
+    1. Creating a bank account for a new customer.  
     2. Depositing amount into an account.
-    
     3. Withdrawing amount from an account.
-    
     4. Checking the balance of an account.
-    
     5. Closing an existing customer's bank account.
 
 
