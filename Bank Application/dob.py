@@ -1,4 +1,4 @@
-''' ______ '''
+''' "Date of Birth" module ~ by Uthej Kumar '''
 
 import calendar
 from datetime import date
@@ -6,11 +6,11 @@ from datetime import date
 
 #Takes custom date and returns it.
 def main():
-    #Prompts the user to enter a year and stores it's value.
+    #Prompts the user to enter a year.
     print("Enter a year.")
     year = int(input(">"))
 
-    #Prompts the user to enter a month and stores it's value.
+    #Prompts the user to select a month.
     print("\nPlease select a month.")
     print('''1 - Jan
 2 - Feb
@@ -24,12 +24,14 @@ def main():
 10 - Oct
 11 - Nov
 12 - Dec''')
-    while True:     #To make sure the user gives an input within the given range.
+    while True:     #Makes sure that the user gives an input within the given range.
         month = int(input(">"))
         if 0 < month <= 12:
             break
+        else:
+            print("Please enter a number in the given range.")
 
-    #Prompts the user to enter a day of the month and stores it's value.
+    #Prompts the user to enter a day of the month.
     print("\nEnter a given day of the month.")
     day = validate_days(year, month)
 
@@ -46,5 +48,7 @@ def validate_days(year, month):
         day = int(input(">"))
         if 0 <= day <= mod:
             break
+        else:
+            print("Please enter a day in the given range.")
     return day
 
