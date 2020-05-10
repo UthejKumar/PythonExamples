@@ -2,29 +2,25 @@
 
 import dob
 
-print("You must create a bank account first.\n")
-
-
 #Function to get user's name.
 def name_func():
     print("First enter your full name.")
     user_name = input(">")
 
-    print("\nPlease confirm your name:")
-    print('"%s"' % user_name)
+    print('\nPlease confirm your name: "%s"' % user_name)
     print("""1. Correct
-    2. Incorrect""")
+2. Incorrect""")
     while True:
         verification = int(input(">"))
         if 1<= verification <= 2:
-            break
-
-        if verification == 1:
-            pass
-        elif verification == 2:
-            print("\nPlease enter your name again. This is your final attempt!")
-            user_name = input(">")
-            print('\nYour name is "%s", you cannot change your name again!' % user_name)
+            if verification == 1:
+                pass
+            elif verification == 2:
+                print("\nPlease enter your name again. This is your final attempt!")
+                user_name = input(">")
+                print('\nYour name is "%s", you cannot change your name again!' % user_name)
+        break
+    return user_name
 
 
 #DOB function and checking legal age to open bank account.
@@ -33,14 +29,15 @@ def dob_func():
     date_of_birth = dob.main()
     print("Your DOB is:",date_of_birth) 
     #Add validation > 18.
+    return date_of_birth
 
 
 #Function to get user's gender.
 def gender_func():
     print("""\nPlease select your gender:
-    M - Male
-    F - Female
-    O - Other""")
+M - Male
+F - Female
+O - Other""")
     while True:
         gender_input = (input(">"))
         if gender_input == "M" or gender_input == "m":
@@ -53,6 +50,7 @@ def gender_func():
             gender = "Other"
             break
     print("Your gender is:", gender)
+    return gender
 
 
 #Function to get user's address.
@@ -62,8 +60,8 @@ def address_func():
     state = input("Enter STATE: ")
     pin_code = int(input("Enter your PINCODE: "))
     country = input("Enter COUNTRY: ")
-
     print("\nYour address - %s, %s, %s - %d." % (city, state, country, pin_code))
+    return city + "," + state + "," + str(pin_code) + "," + country
 
 
 #Function to get user's contact number.
@@ -82,13 +80,12 @@ def phone():
         confirm = int(input(">"))
         if 1 <= confirm <= 2:
             if confirm == 1:
-                pass
+                break
             if confirm == 2:
                 phone()
         else:
             print("Please select only the given options. (1/2)")
+    return mob_no
 
 
 #Function for email services. (Optional)
-
-phone()
