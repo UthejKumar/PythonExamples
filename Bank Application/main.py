@@ -34,6 +34,4 @@ while True:
 
 print("GREAT JOB UTHEJ!!")
 
-
-#Display all the final details all together before submitting the details (Confirm)
 #If there is any particular change that the user wants to make, give him an option to. (per function)
