@@ -4,7 +4,7 @@ import dob
 
 #Function to get user's name.
 def name_func():
-    print("First enter your full name.")
+    print("Enter your full name.")
     user_name = input(">")
 
     print('\nPlease confirm your name: "%s"' % user_name)
@@ -14,12 +14,13 @@ def name_func():
         verification = int(input(">"))
         if 1<= verification <= 2:
             if verification == 1:
-                pass
+                break
             elif verification == 2:
-                print("\nPlease enter your name again. This is your final attempt!")
+                name_func()
+                '''print("\nPlease enter your name again. This is your final attempt!")
                 user_name = input(">")
-                print('\nYour name is "%s", you cannot change your name again!' % user_name)
-        break
+                print('\nYour name is "%s", you cannot change your name again!' % user_name)'''
+            break
     return user_name
 
 
@@ -28,11 +29,21 @@ def dob_func():
     print("\nEnter your date of birth.")
     date_of_birth = dob.main()
     print("Your DOB is:",date_of_birth) 
+    print("""1. Correct
+2. Incorrect""")
+    while True:
+        verification = int(input(">"))
+        if 1<= verification <= 2:
+            if verification == 1:
+                break
+            elif verification == 2:
+                dob_func()
+            break
     #Add validation > 18.
     return date_of_birth
 
 
-#Function to get user's gender.
+#Function to get the user's gender.
 def gender_func():
     print("""\nPlease select your gender:
 M - Male
@@ -50,6 +61,16 @@ O - Other""")
             gender = "Other"
             break
     print("Your gender is:", gender)
+    print("""1. Correct
+2. Incorrect""")
+    while True:
+        verification = int(input(">"))
+        if 1<= verification <= 2:
+            if verification == 1:
+                break
+            elif verification == 2:
+                gender_func()
+            break
     return gender
 
 
@@ -61,11 +82,21 @@ def address_func():
     pin_code = int(input("Enter your PINCODE: "))
     country = input("Enter COUNTRY: ")
     print("\nYour address - %s, %s, %s - %d." % (city, state, country, pin_code))
+    print("""1. Correct
+2. Incorrect""")
+    while True:
+        verification = int(input(">"))
+        if 1<= verification <= 2:
+            if verification == 1:
+                break
+            elif verification == 2:
+                address_func()
+            break
     return city + "," + state + "," + str(pin_code) + "," + country
 
 
 #Function to get user's contact number.
-def phone():
+def phone_func():
     print ("\nPlease enter your MOBILE NUMBER.")
     while True:
         mob_no = int(input(">"))
@@ -82,7 +113,7 @@ def phone():
             if confirm == 1:
                 break
             if confirm == 2:
-                phone()
+                phone_func()
         else:
             print("Please select only the given options. (1/2)")
     return mob_no
