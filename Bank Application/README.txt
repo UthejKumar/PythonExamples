@@ -11,14 +11,14 @@ The USER can perform basic bank application operations like:
 
 Python Modules Hierarchy:
 
-main.py (Run this file)
-    |____1.user_creation.py
-                |____1.1dob.py (import)
-    |____2.transaction.py
-                |____2.1bank_operations.py (import)
-    |____3.bank_operations.py
-                |____3.1transaction.py (import)
-    |____4.randint (Default python module)
+    main.py (Run this file)
+        |____1.user_creation.py
+                    |____1.1dob.py (import)
+        |____2.transaction.py
+                    |____2.1bank_operations.py (import)
+        |____3.bank_operations.py
+                    |____3.1transaction.py (import)
+        |____4.randint (Default python module)
 
 
 Run only the "main.py" file.
