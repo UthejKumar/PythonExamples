@@ -1,4 +1,4 @@
-''' "Date of Birth" module ~ by Uthej Kumar '''
+''' "Date of Birth" module ~ by Uthej Kumar ''' 
 
 import calendar
 from datetime import date
