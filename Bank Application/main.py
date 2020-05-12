@@ -4,9 +4,10 @@ For more info checkout the "bankapplication" README.md.'''
 
 import user_creation as user
 import transaction as trans
+import bank_operations as bo
 from random import randint
 
-print("*"*10,"_"*15,"*"*10,"WELCOME TO NUKY BANK!","*"*10,"_"*15,"*"*10,"\n")
+print("*"*10,"_"*15,"*"*10,"WELCOME TO VERTIGO BANK!","*"*10,"_"*15,"*"*10,"\n")
 
 
 #User creation part of the program.
@@ -18,7 +19,7 @@ address = user.address_func()
 mob_no = user.phone_func()
 print("\nHere is a summary of the details you gave us:")
 print("Name -", user_name)
-print("Date of Birth -", dob)
+print("Date Of Birth -", dob)
 print("Gender -", gender)
 print("Address -", address)
 print("Contact No -", mob_no)
@@ -33,35 +34,11 @@ while True:
             exit()
         break
 
+
+#Creates an account and gives the user an ACCOUNT NO.
 print("\nCongratulations %s your account has been successfully created!" % user_name)
 acc_no = randint(100000000000, 999999999999)
 print("Your account number is: %d\n" % acc_no)
 acc_balance = 0
-print("Your starting balance is: Rs.%.2f\n" % acc_balance)
-
-
-#Taking the user's action choice and performing the corresponding action.
-print("Please choose an action to perform:")
-print("""1. Check Balance
-2. Deposit Amount into Account
-3. Withdraw Money from Account
-4. Close Your Account""")
-while True:
-    actn_chosen = int(input(">"))
-    if 1 <= actn_chosen <= 4:
-        if actn_chosen == 1:
-            print(trans.balance_func(acc_balance))
-        if actn_chosen == 2:
-            acc_balance = trans.deposit_func(acc_balance)
-            print("Your updated balance is Rs.%.2f" % acc_balance)
-        if actn_chosen == 3:        
-            print("""WITHDRAWN AMOUNT: Rs.%.2f. 
-UPDATED ACCOUNT BALANCE: Rs.%.2f\n""" % trans.withdraw_func(acc_balance))
-        if actn_chosen == 4:
-            print("Close account funtion")
-        break
-#Need to write logic where intially acc_balance is 0 and 
-#so after depositing an amt it should reflect so he can withdraw amount from that account
-
-
-#If there is any particular change that the user wants to make, give him an option to. (per function)
+print("Your starting balance is: Rs.%.2f" % acc_balance)
+bo.bank_operations(acc_balance)
