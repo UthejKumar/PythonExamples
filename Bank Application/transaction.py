@@ -1,4 +1,4 @@
-''' "Transaction Types" module ~ by Uthej Kumar '''
+''' "Transaction Types" module ~ by Uthej Kumar ''' 
 
 import bank_operations as bo
 
