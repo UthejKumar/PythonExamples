@@ -9,6 +9,19 @@ The USER can perform basic bank application operations like:
     5. Closing an existing customer's bank account.
 
 
+Python Modules Hierarchy:
+
+main.py (Run this file)
+    |____1.user_creation.py
+                |____1.1dob.py (import)
+    |____2.transaction.py
+                |____2.1bank_operations.py (import)
+    |____3.bank_operations.py
+                |____3.1transaction.py (import)
+    |____4.randint (Default python module)
+
+
+Run only the "main.py" file.
 *   To get started, the user must create a bank account
     every time they run the program.
 
