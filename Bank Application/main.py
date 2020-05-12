@@ -1,6 +1,6 @@
 ''' "Bank Application" ~ by Uthej Kumar
 A simple bank application that performs basic bank operations.
-For more info checkout the "bankapplication" README.txt.'''
+For more info checkout the "bankapplication" README.txt.''' 
 
 import user_creation as user
 import transaction as trans
