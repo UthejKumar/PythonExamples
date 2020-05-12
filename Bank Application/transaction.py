@@ -52,7 +52,7 @@ def withdraw_func(acc_balance):
                             break
                 elif withdraw_amt < acc_balance:                                       
                         acc_balance -= withdraw_amt
-                        print("\nTransaction Successful!\n")
+                        print("\nTRANSACTION SUCCESSFUL!\n")
                         print("WITHDRAWN AMOUNT: Rs.%.2f" % withdraw_amt) 
                         return acc_balance                        
             if wthdrw_dcsn == 2:

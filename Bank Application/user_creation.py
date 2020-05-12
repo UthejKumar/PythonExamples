@@ -4,7 +4,7 @@ import dob
 
 #Function to get user's name.
 def name_func():
-    print("Enter your full name.")
+    print("Enter your FULL NAME.")
     user_name = input(">")
 
     print('\nPlease confirm your name: "%s"' % user_name)
@@ -26,7 +26,7 @@ def name_func():
 
 #DOB function and checking legal age to open bank account.
 def dob_func():
-    print("\nEnter your date of birth.")
+    print("\nEnter your DATE OF BIRTH.")
     date_of_birth = dob.main()
     print("\nYour DOB is:",date_of_birth) 
     print("""1. Correct
@@ -45,7 +45,7 @@ def dob_func():
 
 #Function to get the user's gender.
 def gender_func():
-    print("""\nPlease select your gender:
+    print("""\nPlease select your GENDER:
 M - Male
 F - Female
 O - Other""")

@@ -1,6 +1,6 @@
 ''' "Bank Application" ~ by Uthej Kumar
-A simple bank application that performs basic bank functions.
-For more info checkout the "bankapplication" README.md.'''
+A simple bank application that performs basic bank operations.
+For more info checkout the "bankapplication" README.txt.'''
 
 import user_creation as user
 import transaction as trans
@@ -36,7 +36,7 @@ while True:
 
 
 #Creates an account and gives the user an ACCOUNT NO.
-print("\nCongratulations %s your account has been successfully created!" % user_name)
+print("\nCongratulations %s your account has been SUCCESSFULLY CREATED!" % user_name)
 acc_no = randint(100000000000, 999999999999)
 print("Your account number is: %d\n" % acc_no)
 acc_balance = 0
