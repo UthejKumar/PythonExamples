@@ -1,4 +1,4 @@
-''' "Bank Operations" module ~ by Uthej Kumar '''
+''' "Bank Operations" module ~ by Uthej Kumar ''' 
 
 import transaction as trans
 
