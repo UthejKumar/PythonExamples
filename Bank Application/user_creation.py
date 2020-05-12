@@ -28,7 +28,7 @@ def name_func():
 def dob_func():
     print("\nEnter your date of birth.")
     date_of_birth = dob.main()
-    print("Your DOB is:",date_of_birth) 
+    print("\nYour DOB is:",date_of_birth) 
     print("""1. Correct
 2. Incorrect""")
     while True:
@@ -60,7 +60,7 @@ O - Other""")
         elif gender_input == "O" or gender_input == "o":
             gender = "Other"
             break
-    print("Your gender is:", gender)
+    print("\nYour gender is:", gender)
     print("""1. Correct
 2. Incorrect""")
     while True:

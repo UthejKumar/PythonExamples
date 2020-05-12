@@ -3,9 +3,11 @@ A simple bank application that performs basic bank functions.
 For more info checkout the "bankapplication" README.md.'''
 
 import user_creation as user
+import transaction as trans
+import bank_operations as bo
+from random import randint
 
-
-print("*"*10,"_"*15,"*"*10,"WELCOME TO NUKY BANK!","*"*10,"_"*15,"*"*10,"\n")
+print("*"*10,"_"*15,"*"*10,"WELCOME TO VERTIGO BANK!","*"*10,"_"*15,"*"*10,"\n")
 
 
 #User creation part of the program.
@@ -17,7 +19,7 @@ address = user.address_func()
 mob_no = user.phone_func()
 print("\nHere is a summary of the details you gave us:")
 print("Name -", user_name)
-print("Date of Birth -", dob)
+print("Date Of Birth -", dob)
 print("Gender -", gender)
 print("Address -", address)
 print("Contact No -", mob_no)
@@ -32,6 +34,11 @@ while True:
             exit()
         break
 
-print("GREAT JOB UTHEJ!!")
 
-#If there is any particular change that the user wants to make, give him an option to. (per function)
+#Creates an account and gives the user an ACCOUNT NO.
+print("\nCongratulations %s your account has been successfully created!" % user_name)
+acc_no = randint(100000000000, 999999999999)
+print("Your account number is: %d\n" % acc_no)
+acc_balance = 0
+print("Your starting balance is: Rs.%.2f" % acc_balance)
+bo.bank_operations(acc_balance)
