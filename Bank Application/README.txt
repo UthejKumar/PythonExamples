@@ -1,6 +1,6 @@
 =================================="BANK APPLICATION GUIDE"==================================
 
-STEPS TO RUN THE APPLICATION:
+STEPS TO RUN THE APPLICATION: 
 
 1. Make sure you have Python 3 installed, this program was written in Python 3.
 2. Extract the entire "Bank Application" folder onto your favorite text editor.
